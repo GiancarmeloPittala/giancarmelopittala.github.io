@@ -1,0 +1,68 @@
+{
+  "home": {
+    "introduce": {
+      "label": "Introduce",
+      "title": "Say Hi from <span class=\"text-primary\">Giancarmelo</span><br /> Full stack web developer",
+      "subTitle": "I design and code complete web app and i love what i do. <br /> Just simple like that",
+      "experience": "YEARS OF <br /> EXPERIENCE"
+    },
+    "about": {
+      "label": "About",
+      "title": "Every great project begin with an even <span class=\"text-primary\"> better idea </span>",
+      "description": " I specialize in building custom web applications using a variety of technologies such as vue3 nuxt3 nodejs tailwind and much more. I have a passion for creating responsive and user-friendly websites that not only look great but also perform well. <br /><br /> My journey in web development started in 2017 and since then, I've had the privilege of working with clients from all around the world. I love the challenge of solving complex problems and turning ideas into functional products."
+    },
+    "service": {
+      "label": "Service",
+      "title": "My <span class=\"text-primary\"> Specializations </span>",
+      "description": "As a full-stack web developer, I offer a wide range of services to help you create the website or web application of your dreams. Here are some of the services I can provide:",
+      "services": [
+        {
+          "title": "Custom Web Application Development",
+          "icon": "ph:codepen-logo",
+          "description": "I can develop custom web applications that are tailored to your specific needs, using the latest technologies and frameworks."
+        },
+        {
+          "title": "Website Development",
+          "icon": "mdi:code-tags",
+          "description": " Whether you need a simple brochure website or a complex e-commerce platform, I can create a website that meets your requirements and exceeds your expectations."
+        },
+        {
+          "title": "Consulting and Training",
+          "icon": "fluent:people-community-20-regular",
+          "description": " If you need advice or training on web development or technology, I can provide personalized consulting and training services to help you achieve your goals."
+        },
+        {
+          "title": "SEO Optimization",
+          "icon": "clarity:lightning-line",
+          "description": "I can optimize your website or web application for search engines, helping you rank higher in search results and attract more visitors."
+        },
+        {
+          "title": "API Development and Integration",
+          "icon": "ph:link-simple-duotone",
+          "description": "If you need to integrate your website or web application with third-party or APIs, I can help you do so seamlessly."
+        },
+        {
+          "title": "Maintenance and Support",
+          "icon": "bx:shield-alt-2",
+          "description": " I offer ongoing maintenance and support services to ensure that your website or web application is always up-to-date and running smoothly."
+        },
+        {
+          "title": "Responsive Design",
+          "icon": "mdi:responsive",
+          "description": "All websites I create are designed to be responsive, ensuring that they look great on all devices, from desktops to smartphones."
+        }
+      ]
+    },
+    "skills": {
+      "label": "My skills",
+      "title": "My <span class=\"text-primary\"> Advantages </span>"
+    },
+    "portfolio": {
+      "label": "Portfolio",
+      "title": "My <span class=\"text-primary\"> Projects </span>"
+    },
+    "blog": {
+      "label": "Blog"
+    }
+  }
+}

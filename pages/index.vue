@@ -1,0 +1,37 @@
+<template>
+  <div>
+    <SchemaOrgWebPage name="Giancarmelo Pittalà" image="/images/icon/android-chrome-192x192.png" />
+    <SchemaOrgWebSite />
+    <SchemaOrgPerson name="Giancarmelo Pittalà" image="/images/icon/android-chrome-192x192.png"
+      :same-as="['https://github.com/GiancarmeloPittala']" />
+
+    <div class="grid gap-[100px] max-w-3xl">
+      <HomeIntroduce />
+      <HomeAbout />
+      <HomeService /> 
+      <HomePortfolio />
+      <HomeBlog />
+      <HomeSkils />
+      <HomeContact /> 
+    </div>
+  </div>
+</template>
+
+
+<script setup lang="ts">
+
+useHead({
+  meta: useSiteMeta({
+    type: "website",
+    title: "Giancarmelo pittalà - main",
+    description: "Giancarmelo Pittalà, Web developer",
+    keywords: "Giancarmelo pittala,giancarmelo, giancarmelo pittlà, giancarmelo pittalà web developer, web developer ita",
+    url: `https://giancarmelopittala.com`,
+    mainImage: 'https://source.unsplash.com/k-xKzowQRn8'
+  })
+
+});
+
+</script>
+
+

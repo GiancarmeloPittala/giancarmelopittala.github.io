@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+img{
+  @apply object-cover rounded-xl object-center;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+}
+
+input, textarea {
+  @apply bg-transparent outline-none;
+}
+
+/* .page-enter-active,
+.page-leave-active {
+  transition: all 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform: translateX(-200px)
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  @apply bg-black-900;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary transition-colors rounded-xl;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-800;
+}
