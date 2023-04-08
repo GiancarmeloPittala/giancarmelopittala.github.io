@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/services/shopifyConnector", {data:[{}],fetch:{},mutations:void 0});
