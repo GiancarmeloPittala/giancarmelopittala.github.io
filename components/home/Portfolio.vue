@@ -13,7 +13,7 @@
 
       <div class="group">
         <a class="relative" href="https://salvobeatoparrucchieri.com" target="_blank" rel="noopener noreferrer">
-          <img class="w-full" loading="lazy" src="/images/salvobeatoparrucchieri.webp" />
+          <img class="w-full" loading="lazy" alt="work salvobeatoparrucchieri" src="/images/salvobeatoparrucchieri.webp" />
           <span class="absolute bottom-5 left-5 gap-2 flex">
             <span
               class="bg-gray-900 py-1.5 transition-colors px-3 rounded-xl border group-hover:bg-gray-50 group-hover:text-gray-900 border-gray-900">Nuxt
@@ -29,7 +29,7 @@
 
       <div class="group">
         <a class="relative" href="https://codiceunicotributario.it" target="_blank" rel="noopener noreferrer ">
-          <img class="w-full" loading="lazy" src="/images/codiceunicotributario.webp" />
+          <img class="w-full" loading="lazy" alt="work codiceunico tributario" src="/images/codiceunicotributario.webp" />
           <span class="absolute bottom-5 left-5 gap-2 flex">
             <span
               class="bg-gray-900 py-1.5 transition-colors px-3 rounded-xl border group-hover:bg-gray-50 group-hover:text-gray-900 border-gray-900">Nuxt
@@ -46,7 +46,7 @@
 
       <div class="col-span-2 group flex flex-col">
         <a class="relative " href="https://rs-sync.relax4me.ovh" target="_blank" rel="noopener noreferrer">
-          <img class="w-full" loading="lazy" src="/images/rs_connect.webp" />
+          <img class="w-full" loading="lazy" alt="work relax to shopify connector" src="/images/rs_connect.webp" />
           <span class="absolute bottom-5 left-5 gap-2 flex">
             <span
               class="bg-gray-900 py-1.5 transition-colors px-3 rounded-xl border group-hover:bg-gray-50 group-hover:text-gray-900 border-gray-900">Nuxt
