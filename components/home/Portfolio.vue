@@ -9,7 +9,7 @@
       </button>
     </div>
     <h2 class=" text-5xl xl:text-7xl font-light" v-html="$t('home.portfolio.title')"></h2>
-    <div class="grid gap-8 gap-y-12 grid-cols-2 flex-wrap">
+    <div class="grid gap-8 gap-y-12 xl:grid-cols-2 flex-wrap">
 
       <div class="group">
         <a class="relative" href="https://salvobeatoparrucchieri.com" target="_blank" rel="noopener noreferrer">
