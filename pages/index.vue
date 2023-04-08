@@ -8,28 +8,35 @@
     <div class="grid gap-[100px] max-w-3xl">
       <HomeIntroduce />
       <HomeAbout />
-      <HomeService /> 
+      <HomeService />
       <HomePortfolio />
       <HomeBlog />
       <HomeSkils />
-      <HomeContact /> 
+      <HomeContact />
     </div>
   </div>
 </template>
 
 
 <script setup lang="ts">
+const route = useRoute();
+const { public: config } = useRuntimeConfig()
 
 useHead({
-  meta: useSiteMeta({
-    type: "website",
-    title: "Giancarmelo pittalà - main",
-    description: "Giancarmelo Pittalà, Web developer",
-    keywords: "Giancarmelo pittala,giancarmelo, giancarmelo pittlà, giancarmelo pittalà web developer, web developer ita",
-    url: `https://giancarmelopittala.com`,
-    mainImage: 'https://source.unsplash.com/k-xKzowQRn8'
-  })
-
+  meta: [
+    ...useSiteMeta({
+      type: "website",
+      title: "Giancarmelo pittalà - main",
+      description: "Giancarmelo Pittalà, Web developer",
+      keywords: "Giancarmelo pittala,giancarmelo, giancarmelo pittlà, giancarmelo pittalà web developer, web developer ita",
+      url: `https://giancarmelopittala.com`,
+      mainImage: 'https://source.unsplash.com/k-xKzowQRn8',
+    }),
+    {
+      property: "canonical",
+      content: `${config.siteUrl}${route.fullPath}`
+    }
+  ],
 });
 
 </script>

@@ -60,7 +60,12 @@ const meta = computed(() => [
   {
     property: "article:tag",
     content: doc.tags ? doc.tags.toString() : "",
-  }])
+  },
+  {
+    property: "canonical",
+    content: `${config.siteUrl}${route.fullPath}`,
+  }
+])
 
 useHead({ meta,title: doc.title ?? 'default' });
 </script>

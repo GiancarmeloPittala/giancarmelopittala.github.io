@@ -72,8 +72,7 @@ export default defineNuxtConfig({
     //https://github.com/harlan-zw/nuxt-simple-sitemap
     // 'nuxt-simple-sitemap',
     '@nuxt/content',
-    '@nuxtjs/color-mode',
-    '@nuxt/image-edge',
+    '@nuxtjs/color-mode'
   ],
 
   i18n: {

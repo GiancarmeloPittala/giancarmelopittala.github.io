@@ -12,7 +12,7 @@
                 <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors"
                   name="material-symbols:drive-file-rename-outline-outline" />
                 <span>
-                  Ultimi articoli
+                  {{ $t('article.lastArticle') }}
                 </span>
               </button>
             </div>

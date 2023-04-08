@@ -45,7 +45,7 @@
 
     <NuxtLink :to="{ path: '/', hash: '#contact' }">
       <BaseButton class="rounded-full w-full">
-        Contact me
+        {{ $t('home.card.contact')}}
       </BaseButton>
     </NuxtLink>
 

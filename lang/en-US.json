@@ -1,5 +1,11 @@
 {
+  "article": {
+    "lastArticle": "Last articles"
+  },
   "home": {
+    "card":{
+      "contact": "Contact me"
+    },
     "introduce": {
       "label": "Introduce",
       "title": "Say Hi from <span class=\"text-primary\">Giancarmelo</span><br /> Full stack web developer",
@@ -63,6 +69,15 @@
     },
     "blog": {
       "label": "Blog"
+    },
+    "contact": {
+      "title": "Let's Work <span class=\"text-primary\"> Together! </span>",
+      "name": "Full Name*",
+      "email": "Email*",
+      "phone": "Phone",
+      "budget": "Your Budget",
+      "message": "Message",
+      "send": "Send"
     }
   }
 }

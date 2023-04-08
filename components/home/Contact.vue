@@ -8,62 +8,66 @@
         </span>
       </button>
     </div>
+
     <div>
-      <h3 class=" text-5xl font-light">
-        Let's Work <span class="text-primary"> Together! </span>
-      </h3>
+      <h3 class=" text-5xl font-light" v-html="$t('home.contact.title')"></h3>
     </div>
 
-    <div class="flex justify-between flex-col gap-4">
-      <span class="flex items-center gap-4">
-        <Icon class="w-6 h-6 text-primary" name="material-symbols:alternate-email-rounded" />
-        <a class="md:text-xl font-semibold" href="mailto:info@giancarmelopittala.com">info@giancarmelopittala.com</a>
-      </span>
-    </div>
-    <div class="flex gap-4">
-      <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
-        href="https://github.com/GiancarmeloPittala" target="_blank" rel="noopener noreferrer">
-        <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
-          name="bytesize:github" />
-      </a>
-      <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
-        href="https://www.linkedin.com/in/giancarmelo-pittal%C3%A0" target="_blank" rel="noopener noreferrer">
-        <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
-          name="mdi:linkedin" />
-      </a>
-      <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
-        href="https://instagram.com/giancarmelopittala?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer">
-        <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
-          name="mdi:instagram" />
-      </a>
-      <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
-        href="https://t.me/Giancarmelo_P" target="_blank" rel="noopener noreferrer">
-        <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
-          name="line-md:telegram" />
-      </a>
+    <div class="flex gap-10 items-center flex-wrap justify-between">
+      <div class="flex justify-between flex-col gap-4">
+        <span class="flex items-center gap-4">
+          <Icon class="w-6 h-6 text-primary" name="material-symbols:alternate-email-rounded" />
+          <a class="md:text-xl font-semibold" href="mailto:info@giancarmelopittala.com">info@giancarmelopittala.com</a>
+        </span>
+      </div>
+
+      <div class="flex gap-4">
+        <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
+          href="https://github.com/GiancarmeloPittala" target="_blank" rel="noopener noreferrer">
+          <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+            name="bytesize:github" />
+        </a>
+        <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
+          href="https://www.linkedin.com/in/giancarmelo-pittal%C3%A0" target="_blank" rel="noopener noreferrer">
+          <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+            name="mdi:linkedin" />
+        </a>
+        <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
+          href="https://instagram.com/giancarmelopittala?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer">
+          <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+            name="mdi:instagram" />
+        </a>
+        <a class="border border-gray-400 hover:border-primary transition-colors group rounded-full p-4 w-12 h-12 relative"
+          href="https://t.me/Giancarmelo_P" target="_blank" rel="noopener noreferrer">
+          <Icon class="w-5 h-5 group-hover:text-primary absolute inset-1/2 -translate-x-1/2 -translate-y-1/2"
+            name="line-md:telegram" />
+        </a>
+      </div>
     </div>
 
     <form @submit.prevent="">
       <div class="grid md:grid-cols-6 gap-6">
 
         <div class="md:col-span-3">
-          <BaseInput v-model="mail.fullName" placeholder="Mario Rossi" label-text="Full name*" />
+          <BaseInput v-model="mail.fullName" placeholder="Mario Rossi" :label-text="$t('home.contact.name')" />
         </div>
         <div class="md:col-span-3">
-          <BaseInput v-model="mail.email" placeholder="info@giancarmelopittala.com" label-text="Email*" type="email" />
+          <BaseInput v-model="mail.email" placeholder="info@giancarmelopittala.com" :label-text="$t('home.contact.email')"
+            type="email" />
         </div>
         <div class="md:col-span-4">
-          <BaseInput v-model="mail.phone" placeholder="3049059483" label-text="Phone" type="tel" />
+          <BaseInput v-model="mail.phone" placeholder="3049059483" :label-text="$t('home.contact.phone')" type="tel" />
         </div>
         <div class="md:col-span-2">
-          <BaseInput v-model="mail.budget" placeholder="100" label-text="Your budget" type="number" />
+          <BaseInput v-model="mail.budget" placeholder="100" :label-text="$t('home.contact.budget')" type="number" />
         </div>
 
         <div class="md:col-span-6">
-          <BaseInput v-model="mail.message" placeholder="Message" label-text="Message" />
+          <BaseInput v-model="mail.message" placeholder="Message" :label-text="$t('home.contact.message')" />
         </div>
-        <a :href="`mailto:info@giancarmelopittala.com?${params}`" class="md:col-span-6 border-primary hover:bg-primary hover:text-black text-primary rounded-lg px-4 py-2 overflow-hidden relative group cursor-pointer border-2 font-semibold  transition-colors text-center">
-          Send
+        <a :href="`mailto:info@giancarmelopittala.com?${params}`"
+          class="md:col-span-6 border-primary hover:bg-primary hover:text-black text-primary rounded-lg px-4 py-2 overflow-hidden relative group cursor-pointer border-2 font-semibold  transition-colors text-center">
+          {{ $t('home.contact.send') }}
         </a>
       </div>
     </form>

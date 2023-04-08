@@ -1,5 +1,11 @@
 {
+  "article": {
+    "lastArticle": "Ultimi articoli"
+  },
   "home": {
+    "card":{
+      "contact": "Contatti"
+    },
     "introduce": {
       "label": "Introduzione",
       "title": "Benvenuto, sono <span class=\"text-primary\">Giancarmelo</span><br /> Sviluppatore web full stack",
@@ -63,6 +69,15 @@
     },
     "blog": {
       "label": "Blog"
+    },
+    "contact": {
+      "title": "Lavoriamo <span class=\"text-primary\"> Insieme! </span>",
+      "name": "Nome completo*",
+      "email": "Email*",
+      "phone": "Telefono",
+      "budget": "Budget",
+      "message": "Messaggio",
+      "send": "Invia"
     }
   }
 }

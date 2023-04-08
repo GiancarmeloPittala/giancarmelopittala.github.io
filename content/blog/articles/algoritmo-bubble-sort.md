@@ -1,6 +1,6 @@
 ---
-title: Bubble Sort, algoritmo d'ordinamento in c++ 
-description: Il Bubble Sort è un algoritmo d'ordinamento iterativo, fra i più semplici da implementare, con una complessità di O(n^2)
+title: Bubble Sort, sorting algorithm in c++
+description: Bubble Sort is an iterative sorting algorithm, one of the simplest to implement, with a complexity of O(n^2)
 img: /images/articles/bubble-sort.gif
 alt: bubble sort
 author: Giancarmelo
@@ -13,32 +13,30 @@ categories:
   - tutorial
 ---
 
-## Introduzione
+## Introduction
 
-L'algoritmo BubbleSort (ordinamento "a bolle") si basa sull'idea di far "emergere" man mano gli elementi più piccoli verso l'inizio dell'insieme da 
+The BubbleSort algorithm is based on the idea of gradually "bringing up" the smallest elements towards the beginning of the set to be sorted, while at the same time "sinking" the larger elements towards the end of the set.
 
-ordinare facendo "sprofondare" al tempo stesso gli elementi più grandi verso la fine dell'insieme
+### Why sort?
 
-### Perché ordinare?
+> It is possible to perform a search, or any operation without sorting, with a certain criterion, a series of data.
 
-> Si potrebbe eseguire la ricerca, o qualsiasi operazione senza ordinare, *con un determinato criterio*, una serie di dati.
-
-Ordinare i dati agevola la ricerca se eseguita con un criterio, se a esempio, abbiamo un array x = [4,7,8,43,54,62]; sarà molto semplice utilizzare algoritmi che sfruttano in cosiddetto **Divide et impera** che ridurrà ad una manciata di passaggi la ricerca di un determinato valore ad esempio il "54", si potrà avere già a un primo passaggio l'array [54,62] e subito dopo trovare immediatamente il valore cercato, invece di iterare l'intero array fin dalla posizione 0 alla posizone n, dove n nel nostro caso è 4
+Sorting the data facilitates the search if performed with a criterion, for example, if we have an array x = [4,7,8,43,54,62]; it will be very simple to use algorithms that exploit the so-called **Divide et impera** which will reduce the search for a certain value, for example "54", to a handful of steps, you can already have at the first step the array [54,62] and immediately after find the value sought, instead of iterating the entire array from position 0 to position n, where n in our case is 4.
 
 
-## Strategia 
+## Strategy 
 
-> La strategia adottata è quella di scorrere più volte la sequenza da ordinare, verificando ad ogni passo l'ordinamento reciproco degli elementi **contigui**, a<sub>i</sub> e a <sub>i + 1</sub>, ed eventualmente scambiare le coppie non ordinate.
+> The strategy adopted is to scroll through the sequence to be sorted several times, checking at each step the mutual order of the **adjacent** elements, a<sub>i</sub> and a <sub>i + 1</sub>, and eventually swapping the unordered pairs.
 
-esempio:
+Example:
 
 - A = [**3**,**5**,2,4,1] => [3,**5**,**2**,4,1] => [3,2,**5**,**4**,1] => [3,2,4,**5**,**1**] ==> [3,2,4,1,5]
 - A = [**3**,**2**,4,1,5] => [2,**3**,**4**,1,5] => [2,3,**4**,**1**,5] => [2,3,1,4,5]
 - A = [**2**,**3**,1,4,5] => [2,**3**,**1**,4,5] => [2,1,3,4,5]
 - A = [**2**,**1**,3,4,5] => [1,2,3,4,5]
 
-Alla fine di ognuna delle quattro scansioni della sequenza, l'elemento più grande del sottoinsieme ancora da ordinare, finisce in fondo alla sequenza, nella sua posizione definitivamente corretta, mentre la sotto sequenza ancora non ordinata si riduce per ogni passaggio <br /><br />
-Ora vediamo una rappresentazione in codice c++
+At the end of each of the four scans of the sequence, the largest element of the subset still to be sorted ends up at the end of the sequence, in its definitively correct position, while the still unsorted subsequence is reduced for each pass. <br /><br />
+Now let's see a representation in c++ code.
 <br /><br />
 
 ```cpp
@@ -51,11 +49,11 @@ int main(){
   const short size = 20;
   int elementi[size] = { 0 };
 
-  //popoliamo l'array elementi con valori casuali compresi tra 3 e 99 ( estremi inclusi )
+  //populate the elementi array with random values between 3 and 99 (inclusive)
   for(int i = 0; i< size; i++)
     elementi[i] = rand() % 100 + 3;
 
-  cout << "Pre ordinamento\n";
+  cout << "Pre-ordine\n";
   for( auto e : elementi)
       cout << e << " ";
   cout << endl;
@@ -67,7 +65,7 @@ int main(){
             swap( elementi[j], elementi[ j + 1]);
   // fine bubblesort 
 
-  cout << "Post ordinamento\n";
+  cout << "Post-ordine\n";
   for( auto e : elementi)
       cout << e << " ";
   cout << endl;
