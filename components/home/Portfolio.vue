@@ -9,7 +9,7 @@
       </button>
     </div>
     <h2 class=" text-5xl xl:text-7xl font-light" v-html="$t('home.portfolio.title')"></h2>
-    <div class="grid gap-8 gap-y-12 xl:grid-cols-2 flex-wrap">
+    <div class="grid gap-8 gap-y-12 md:grid-cols-2">
 
       <div class="group">
         <a class="relative" href="https://salvobeatoparrucchieri.com" target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,7 @@
         </p>
       </div>
 
-      <div class="col-span-2 group flex flex-col">
+      <div class="md:col-span-2 group flex flex-col">
         <a class="relative " href="https://rs-sync.relax4me.ovh" target="_blank" rel="noopener noreferrer">
           <img class="w-full" loading="lazy" alt="work relax to shopify connector" src="/images/rs_connect.webp" />
           <span class="absolute bottom-5 left-5 gap-2 flex">
