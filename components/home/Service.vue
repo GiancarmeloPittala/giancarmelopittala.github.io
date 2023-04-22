@@ -6,7 +6,12 @@
         <span v-text="$t('home.service.label')"></span>
       </button>
     </div>
-    <h3 class=" text-5xl font-light" v-html="$t('home.service.title')"></h3>
+    <h3 class=" text-5xl font-light">
+      <span v-html="$t('home.service.title')"></span> 
+      <span class="text-primary">
+        {{ $t('home.service.titleBold') }}
+      </span>
+    </h3>
 
     <p class="text-gray-400" v-html="$t('home.service.description')"></p>
 

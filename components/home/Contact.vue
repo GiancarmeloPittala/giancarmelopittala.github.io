@@ -10,7 +10,12 @@
     </div>
 
     <div>
-      <h3 class=" text-5xl font-light" v-html="$t('home.contact.title')"></h3>
+      <h3 class=" text-5xl font-light">
+      <span v-html="$t('home.contact.title')"></span> 
+      <span class="text-primary">
+        {{ $t('home.contact.titleBold') }}
+      </span>
+    </h3>
     </div>
 
     <div class="flex gap-10 items-center flex-wrap justify-between">

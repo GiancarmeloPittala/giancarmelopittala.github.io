@@ -8,7 +8,10 @@
         </span>
       </button>
     </div>
-    <h2 class=" text-5xl xl:text-7xl font-light" v-html="$t('home.introduce.title')"></h2>
+    <h2 class=" text-5xl xl:text-7xl font-light" >
+      <span v-html="$t('home.introduce.title')"></span>
+      <span class="text-primary">Giancarmelo</span><br /> Full stack web developer
+    </h2>
     <p class="text-gray-400" v-html="$t('home.introduce.subTitle')"></p>
     <div class="relative flex xl:justify-end cursor-pointer" @click="$router.push({ hash: '#portfolio' })">
       <div class=" border p-2 rounded-full ">

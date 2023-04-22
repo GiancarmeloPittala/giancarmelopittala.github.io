@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const DEFAULT_NUXT_PUBLIC_SITE_URL = 'https://giancarmelopittala.com';
-
+import { i18n } from './config/i18n'
 
 export default defineNuxtConfig({
   ssr: true,
@@ -75,35 +75,11 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode'
   ],
 
-  i18n: {
-    locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        file: 'en-US.json',
-        name: 'English',
-        icon: 'twemoji:flag-for-flag-united-states'
-      },
-      {
-        code: 'it',
-        iso: 'it-IT',
-        file: 'it-IT.json',
-        name: 'Italiano',
-        icon: 'openmoji:flag-italy'
-      },
-    ],
-    defaultLocale: 'en',
-    lazy: true,
-    langDir: 'lang',
-    vueI18n: {
-      fallbackLocale: 'en',
-    },
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',  // recommended
-    }
+  robots: {
+    sitemap: [ '/sitemap.xml' ],
   },
+  
+  i18n,
 
   schemaOrg: {
     host: DEFAULT_NUXT_PUBLIC_SITE_URL,

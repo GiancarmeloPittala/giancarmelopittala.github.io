@@ -7,6 +7,7 @@
         </span>
         <h2 v-if="intestazione.title" data-aos="fade-right" data-aos-delay="100" class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
           {{ intestazione.title }}
+          <span>{{ $ }}</span>
         </h2>
         <p v-if="intestazione.description" v-html="intestazione.description" data-aos="fade-right" data-aos-delay="120" class="text-base text-body-color"></p>
       </div>

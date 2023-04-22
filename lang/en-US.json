@@ -3,23 +3,25 @@
     "lastArticle": "Last articles"
   },
   "home": {
-    "card":{
+    "card": {
       "contact": "Contact me"
     },
     "introduce": {
       "label": "Introduce",
-      "title": "Say Hi from <span class=\"text-primary\">Giancarmelo</span><br /> Full stack web developer",
-      "subTitle": "I design and code complete web app and i love what i do. <br /> Just simple like that",
-      "experience": "YEARS OF <br /> EXPERIENCE"
+      "title": "Say Hi from",
+      "subTitle": "I design and code complete web app and i love what i do. Just simple like that",
+      "experience": "YEARS OF EXPERIENCE"
     },
     "about": {
       "label": "About",
-      "title": "Every great project begin with an even <span class=\"text-primary\"> better idea </span>",
-      "description": " I specialize in building custom web applications using a variety of technologies such as vue3 nuxt3 nodejs tailwind and much more. I have a passion for creating responsive and user-friendly websites that not only look great but also perform well. <br /><br /> My journey in web development started in 2017 and since then, I've had the privilege of working with clients from all around the world. I love the challenge of solving complex problems and turning ideas into functional products."
+      "title": "Every great project begin with an even better idea",
+      "titleBold": " better idea",
+      "description": " I specialize in building custom web applications using a variety of technologies such as vue3 nuxt3 nodejs tailwind and much more. I have a passion for creating responsive and user-friendly websites that not only look great but also perform well. My journey in web development started in 2017 and since then, I've had the privilege of working with clients from all around the world. I love the challenge of solving complex problems and turning ideas into functional products."
     },
     "service": {
       "label": "Service",
-      "title": "My <span class=\"text-primary\"> Specializations </span>",
+      "title": "My",
+      "titleBold": " Specializations",
       "description": "As a full-stack web developer, I offer a wide range of services to help you create the website or web application of your dreams. Here are some of the services I can provide:",
       "services": [
         {
@@ -61,17 +63,20 @@
     },
     "skills": {
       "label": "My skills",
-      "title": "My <span class=\"text-primary\"> Advantages </span>"
+      "title": "My",
+      "titleBold": " Advantages"
     },
     "portfolio": {
       "label": "Portfolio",
-      "title": "My <span class=\"text-primary\"> Projects </span>"
+      "title": "My",
+      "titleBold": " Projects"
     },
     "blog": {
       "label": "Blog"
     },
     "contact": {
-      "title": "Let's Work <span class=\"text-primary\"> Together! </span>",
+      "title": "Let's Work",
+      "titleBold": " Together!",
       "name": "Full Name*",
       "email": "Email*",
       "phone": "Phone",

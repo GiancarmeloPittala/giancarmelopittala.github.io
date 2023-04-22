@@ -8,8 +8,11 @@
         </span>
       </button>
     </div>
-    <h3 class=" text-5xl font-light" v-html="$t('home.skills.title')">
-      
+    <h3 class=" text-5xl font-light">
+      <span v-html="$t('home.skills.title')"></span> 
+      <span class="text-primary">
+        {{ $t('home.skills.titleBold') }}
+      </span>
     </h3>
     <div class="flex gap-8 flex-wrap justify-evenly">
       <span class="flex flex-col items-center justify-center transition-colors group rounded-xl" title="vscode-dark">
@@ -86,7 +89,7 @@
       </span>
       <span class="grid items-center transition-colors group gap-4 p-4 rounded-full" title="nuxtjs-dark">
         <Icon class="w-20 h-20" name="skill-icons:nuxtjs-dark" />
-        <span class="capitalize text-center group-hover:text-primary">nuxt js 
+        <span class="capitalize text-center group-hover:text-primary">nuxt js
         </span>
       </span>
     </div>

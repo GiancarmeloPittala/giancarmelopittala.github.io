@@ -8,7 +8,12 @@
         </span>
       </button>
     </div>
-    <h3 class=" text-5xl font-light" v-html="$t('home.about.title')"></h3>
+    <h3 class=" text-5xl font-light">
+      <span v-html="$t('home.about.title')"></span> 
+      <span class="text-primary">
+        {{ $t('home.about.titleBold') }}
+      </span>
+    </h3>
     <p class="text-gray-400" v-html="$t('home.about.description')"></p>
   </section>
 </template>
