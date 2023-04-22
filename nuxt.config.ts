@@ -104,8 +104,8 @@ export default defineNuxtConfig({
     langDir: 'lang/',
     defaultLocale: 'en',
     lazy: true,
-    strategy: 'prefix_and_default',
-    vueI18n: './config/vueI18n.ts',
+    strategy: 'prefix_and_default'
+    // vueI18n: './config/vueI18n.ts',
   },
 
   schemaOrg: {
