@@ -84,14 +84,14 @@ useHead({ meta,title: doc.title ?? 'default' });
 }
 
 .blog-section blockquote {
-  @apply p-4 bg-[#090302] rounded-xl
+  @apply p-4 bg-[#090302] rounded-xl text-gray-300
 }
 
 .blog-section h2,
 .blog-section h3,
 .blog-section h4,
 .blog-section h5 {
-  @apply text-gray-50;
+  @apply dark:text-gray-50;
 }
 
 .blog-section pre {
@@ -99,7 +99,7 @@ useHead({ meta,title: doc.title ?? 'default' });
 }
 
 .blog-section p {
-  @apply text-gray-300;
+  @apply dark:text-gray-300;
 }
 
 .blog-section>*>* {

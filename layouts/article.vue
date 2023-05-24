@@ -9,7 +9,7 @@
           <div class="grid gap-8">
             <div>
               <button class="flex gap-2 items-center border border-gray-400 rounded-3xl px-3 py-1.5">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors"
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors"
                   name="material-symbols:drive-file-rename-outline-outline" />
                 <span>
                   {{ $t('article.lastArticle') }}

@@ -1,14 +1,14 @@
 <template>
   <section id="skils" class="flex flex-col gap-10">
     <div>
-      <button class="flex gap-2 items-center border rounded-3xl px-3 py-1.5">
-        <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="ri:file-paper-2-fill" />
+      <button class="flex gap-2 items-center border border-gray-700 dark:border-gray-400 rounded-3xl px-3 py-1.5">
+        <Icon class="w-6 h-6 border-gray-700 dark:border-gray-400 group-hover:text-primary transition-colors" name="ri:file-paper-2-fill" />
         <span>
           {{ $t('home.skills.label') }}
         </span>
       </button>
     </div>
-    <h3 class=" text-5xl font-light">
+    <h3 class=" text-3xl xl:text-5xl font-light">
       <span v-html="$t('home.skills.title')"></span> 
       <span class="text-primary">
         {{ $t('home.skills.titleBold') }}

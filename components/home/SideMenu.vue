@@ -1,15 +1,20 @@
 <template>
   <header class="fixed top-16 xl:top-20 right-16 transition-all">
     <div class="grid gap-32">
-      <div @click="open = !open">
-        <LayoutHeaderOpenButton v-model="open" />
+      <div>
+        <div @click="open = !open">
+          <LayoutHeaderOpenButton v-model="open" />
+        </div>
+        <span class="flex items-center justify-center mt-4 dark:text-gray-400 w-12 h-12 relative focus:outline-none border border-gray-400 rounded-full">
+          <LayoutHeaderDarkModeButton />
+        </span>
       </div>
       <nav>
-        <ul class="hidden border border-gray-200 rounded-full p-2 py-8 gap-6 lg:grid">
+        <ul class="hidden border border-gray-400 rounded-full p-2 py-8 gap-6 lg:grid">
           <li class="justify-center flex relative">
             <NuxtLink :to="{ path: '/', hash: '#introduce' }">
               <div class="group flex">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="ic:twotone-house" />
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="ic:twotone-house" />
                 <span
                   class="group-hover:opacity-100 transition-opacity px-1 text-sm  rounded-md absolute -left-[70px] opacity-0 top-1/2 -translate-y-1/2">Home</span>
               </div>
@@ -18,7 +23,7 @@
           <li class="justify-center flex relative">
             <NuxtLink :to="{ path: '/', hash: '#about' }">
               <div class="group flex">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors"
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors"
                   name="material-symbols:person-2-outline-rounded" />
                 <span
                   class="group-hover:opacity-100 transition-opacity px-1 text-sm  rounded-md absolute -left-[70px] opacity-0 top-1/2 -translate-y-1/2">About</span>
@@ -28,7 +33,7 @@
           <li class="justify-center flex relative">
             <NuxtLink :to="{ path: '/', hash: '#service' }">
               <div class="group flex">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors"
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors"
                   name="ri:file-paper-2-fill" />
                 <span
                   class="group-hover:opacity-100 transition-opacity px-1 text-sm  rounded-md absolute -left-[70px] opacity-0 top-1/2 -translate-y-1/2">Services</span>
@@ -38,7 +43,7 @@
           <li class="justify-center flex relative">
             <NuxtLink :to="{ path: '/', hash: '#skils' }">
               <div class="group flex">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="ic:sharp-code" />
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="ic:sharp-code" />
                 <span
                   class="group-hover:opacity-100 transition-opacity px-1 text-sm  rounded-md absolute -left-[70px] opacity-0 top-1/2 -translate-y-1/2">Skills</span>
               </div>
@@ -47,7 +52,7 @@
           <li class="justify-center flex relative">
             <NuxtLink :to="{ path: '/', hash: '#portfolio' }">
               <div class="group flex">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="gala:terminal" />
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="gala:terminal" />
                 <span
                   class="group-hover:opacity-100 transition-opacity px-1 text-sm  rounded-md absolute -left-[70px] opacity-0 top-1/2 -translate-y-1/2">Portfolio</span>
               </div>
@@ -56,7 +61,7 @@
           <li class="justify-center flex relative">
             <NuxtLink :to="{ path: '/', hash: '#blog' }">
               <div class="group flex">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="carbon:blog" />
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="carbon:blog" />
                 <span
                   class="group-hover:opacity-100 transition-opacity px-1 text-sm  rounded-md absolute -left-[70px] opacity-0 top-1/2 -translate-y-1/2">Blog</span>
               </div>
@@ -65,7 +70,7 @@
           <li class="justify-center flex relative">
             <NuxtLink :to="{ path: '/', hash: '#contact' }">
               <div class="group flex">
-                <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="mdi:email-box" />
+                <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="mdi:email-box" />
                 <span
                   class="group-hover:opacity-100 transition-opacity px-1 text-sm  rounded-md absolute -left-[70px] opacity-0 top-1/2 -translate-y-1/2">Contact</span>
               </div>
@@ -79,7 +84,7 @@
       enter-to-class="transform translate-x-0" leave-active-class="transition duration-75 ease-in"
       leave-from-class="transform translate-x-0" leave-to-class="transform translate-x-full">
       <div v-if="open" class="fixed left-0 bottom-0 top-0 right-0 bg-gray-400 bg-opacity-20" @click="open = false">
-        <nav class="max-w-[300px] text-gray-400 bg-black h-screen overflow-y-auto ml-auto p-12">
+        <nav class="max-w-[300px] dark:text-gray-400 bg-black h-screen overflow-y-auto ml-auto p-12">
           <h4 class="mb-12 text-xl">Menu</h4>
           <ul class="gap-6 grid">
             <li class="group">

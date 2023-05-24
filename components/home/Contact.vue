@@ -1,8 +1,8 @@
 <template>
   <section id="contact" class="flex flex-col gap-10">
     <div>
-      <button class="flex gap-2 items-center border border-gray-400 rounded-3xl px-3 py-1.5">
-        <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="mdi:email-box" />
+      <button class="flex gap-2 items-center border border-gray-700 dark:border-gray-400 rounded-3xl px-3 py-1.5">
+        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="mdi:email-box" />
         <span>
           Contact
         </span>
@@ -10,7 +10,7 @@
     </div>
 
     <div>
-      <h3 class=" text-5xl font-light">
+      <h3 class=" text-3xl xl:text-5xl font-light">
       <span v-html="$t('home.contact.title')"></span> 
       <span class="text-primary">
         {{ $t('home.contact.titleBold') }}

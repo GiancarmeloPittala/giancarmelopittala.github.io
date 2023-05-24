@@ -22,7 +22,7 @@ const props = defineProps({
 })
 
 const color_style = ref({
-  primary: 'border-primary hover:bg-primary hover:text-black text-primary',
+  primary: 'border-primary-900 hover:bg-primary hover:text-black text-primary',
   green: 'border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-gray-50',
   blue: 'border-sky-600 text-sky-600 hover:bg-sky-600 hover:text-gray-50',
   white: 'border-gray-50 hover:bg-gray-50 hover:text-gray-900',

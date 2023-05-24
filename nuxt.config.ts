@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const DEFAULT_NUXT_PUBLIC_SITE_URL = 'https://giancarmelopittala.com';
-import { i18n } from './config/i18n'
 
 export default defineNuxtConfig({
   ssr: true,
@@ -84,6 +83,11 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
+      alwaysRedirect: false,
+      fallbackLocale: '',
+      cookieCrossOrigin: false,
+      cookieDomain: null,
+      cookieSecure: false,
     },
     locales: [
       {
@@ -113,14 +117,18 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    classSuffix: ''
+    classSuffix: '',
   },
 
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml']
+      routes: ['/sitemap.xml', '/api/card-redirect']
     }
+  },
+
+  tailwindcss: {
+    viewer: false
   }
 
 

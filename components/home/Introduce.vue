@@ -1,20 +1,20 @@
 <template>
   <section id="introduce" class="flex flex-col gap-10">
     <div>
-      <button class="flex gap-2 items-center border border-gray-400 rounded-3xl px-3 py-1.5">
-        <Icon class="w-6 h-6 text-gray-400 group-hover:text-primary transition-colors" name="ic:twotone-house" />
+      <button class="flex gap-2 items-center border border-gray-700 dark:border-gray-400 rounded-3xl px-3 py-1.5">
+        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="ic:twotone-house" />
         <span>
           {{ $t('home.introduce.label') }}
         </span>
       </button>
     </div>
-    <h2 class=" text-5xl xl:text-7xl font-light" >
+    <h2 class="text-3xl md:text-5xl xl:text-7xl font-light" >
       <span v-html="$t('home.introduce.title')"></span>
-      <span class="text-primary">Giancarmelo</span><br /> Full stack web developer
+      <span class="text-primary"> Giancarmelo</span><br /> Full stack web developer
     </h2>
-    <p class="text-gray-400" v-html="$t('home.introduce.subTitle')"></p>
-    <div class="relative flex xl:justify-end cursor-pointer" @click="$router.push({ hash: '#portfolio' })">
-      <div class=" border p-2 rounded-full ">
+    <p class="dark:text-gray-400" v-html="$t('home.introduce.subTitle')"></p>
+    <div class="relative flex xl:justify-end cursor-pointer " @click="$router.push({ hash: '#portfolio' })">
+      <div class=" border p-2 rounded-full bg-black">
         <img loading="lazy" class="w-32 h-32 animate-spin" style="animation-duration: 6s;" src="/images/round-text.png" alt="my projects image" />
       </div>
       <Icon
@@ -27,7 +27,7 @@
         <span class="text-6xl text-primary" >
           {{ new Date().getFullYear() - 2017 }} +
         </span>
-        <span class="text-gray-400 font-thin" v-html="$t('home.introduce.experience')"></span>
+        <span class="dark:text-gray-400 font-thin" v-html="$t('home.introduce.experience')"></span>
       </div>
       <div class="flex flex-wrap gap-6 max-w-[300px]">
         <span title="vscode-dark">

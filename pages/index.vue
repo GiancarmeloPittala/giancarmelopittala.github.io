@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <SchemaOrgWebPage name="Giancarmelo Pittalà" image="/images/icon/android-chrome-192x192.png" />
     <SchemaOrgWebSite />
     <SchemaOrgPerson name="Giancarmelo Pittalà" image="/images/icon/android-chrome-192x192.png"
