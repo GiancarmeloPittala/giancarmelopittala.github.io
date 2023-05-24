@@ -123,7 +123,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml', '/api/card-redirect']
+      routes: ['/sitemap.xml']
     }
   },
 
