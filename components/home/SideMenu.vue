@@ -84,7 +84,7 @@
       enter-to-class="transform translate-x-0" leave-active-class="transition duration-75 ease-in"
       leave-from-class="transform translate-x-0" leave-to-class="transform translate-x-full">
       <div v-if="open" class="fixed left-0 bottom-0 top-0 right-0 bg-gray-400 bg-opacity-20" @click="open = false">
-        <nav class="max-w-[300px] dark:text-gray-400 bg-black h-screen overflow-y-auto ml-auto p-12">
+        <nav class="max-w-[300px] dark:text-gray-400 bg-white dark:bg-black h-screen overflow-y-auto ml-auto p-12">
           <h4 class="mb-12 text-xl">Menu</h4>
           <ul class="gap-6 grid">
             <li class="group">
