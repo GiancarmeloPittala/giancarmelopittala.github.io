@@ -71,8 +71,14 @@ export default defineNuxtConfig({
     //https://github.com/harlan-zw/nuxt-simple-sitemap
     // 'nuxt-simple-sitemap',
     '@nuxt/content',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    'nuxt-gtag'
   ],
+
+  gtag: {
+    id: 'G-TNQRKS3F3D',
+    initialConsent: true
+  },
 
   robots: {
     sitemap: ['/sitemap.xml'],
