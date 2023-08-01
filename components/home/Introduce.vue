@@ -2,7 +2,7 @@
   <section id="introduce" class="flex flex-col gap-10">
     <div>
       <button class="flex gap-2 items-center border border-gray-700 dark:border-gray-400 rounded-3xl px-3 py-1.5">
-        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="ic:twotone-house" />
+        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-verde transition-colors" name="ic:twotone-house" />
         <span>
           {{ $t('home.introduce.label') }}
         </span>
@@ -10,7 +10,7 @@
     </div>
     <h2 class="text-3xl md:text-5xl xl:text-7xl font-light" >
       <span v-html="$t('home.introduce.title')"></span>
-      <span class="text-primary"> Giancarmelo</span><br /> Full stack web developer
+      <span class="text-verde"> Giancarmelo</span><br /> Full stack web developer
     </h2>
     <p class="dark:text-gray-400" v-html="$t('home.introduce.subTitle')"></p>
     <div class="relative flex xl:justify-end cursor-pointer " @click="$router.push({ hash: '#portfolio' })">
@@ -18,13 +18,13 @@
         <img loading="lazy" class="w-32 h-32 animate-spin" style="animation-duration: 6s;" src="/images/round-text.png" alt="my projects image" />
       </div>
       <Icon
-        class="w-10 h-10 animate-bounce absolute top-14 left-12 xl:left-auto xl:right-14 text-gray-400 group-hover:text-primary transition-colors"
+        class="w-10 h-10 animate-bounce absolute top-14 left-12 xl:left-auto xl:right-14 text-gray-400 group-hover:text-verde transition-colors"
         name="ic:sharp-keyboard-arrow-down" />
     </div>
     <div class="flex flex-wrap gap-20">
 
       <div class="grid gap-8">
-        <span class="text-6xl text-primary" >
+        <span class="text-6xl text-verde" >
           {{ new Date().getFullYear() - 2017 }} +
         </span>
         <span class="dark:text-gray-400 font-thin" v-html="$t('home.introduce.experience')"></span>

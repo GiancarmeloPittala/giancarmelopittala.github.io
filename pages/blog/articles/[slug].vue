@@ -80,7 +80,7 @@ useHead({ meta,title: doc.title ?? 'default' });
 }
 
 .blog-section strong {
-  @apply text-primary;
+  @apply text-verde;
 }
 
 .blog-section blockquote {

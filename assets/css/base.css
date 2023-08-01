@@ -34,10 +34,14 @@ input, textarea {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary transition-colors rounded-xl;
+  @apply bg-verde transition-colors rounded-xl;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary-800;
+  @apply bg-verde-800;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
 }

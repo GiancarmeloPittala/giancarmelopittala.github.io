@@ -14,7 +14,7 @@ export default <Partial<Config>>{
     },
     extend: {
       colors: {
-        primary: {
+        verde: {
           DEFAULT: 'rgba(40, 233, 140, 1)',
           100: 'rgba(40, 233, 140, .1)',
           200: 'rgba(40, 233, 140, .2)',

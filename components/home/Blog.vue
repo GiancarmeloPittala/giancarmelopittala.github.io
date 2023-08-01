@@ -2,7 +2,7 @@
   <section id="blog" class="flex flex-col gap-10">
     <div>
       <button class="flex gap-2 items-center border border-gray-700 dark:border-gray-400 rounded-3xl px-3 py-1.5">
-        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="carbon:blog" />
+        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-verde transition-colors" name="carbon:blog" />
         <span>
           {{ $t('home.blog.label') }}
         </span>

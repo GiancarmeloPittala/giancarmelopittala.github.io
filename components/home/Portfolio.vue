@@ -2,7 +2,7 @@
   <section id="portfolio" class="flex flex-col gap-10">
     <div>
       <button class="flex gap-2 items-center border border-gray-700 dark:border-gray-400 rounded-3xl px-3 py-1.5">
-        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-primary transition-colors" name="ic:twotone-house" />
+        <Icon class="w-6 h-6 dark:text-gray-400 group-hover:text-verde transition-colors" name="ic:twotone-house" />
         <span>
           {{ $t('home.portfolio.label') }}
         </span>
@@ -10,7 +10,7 @@
     </div>
     <h3 class=" text-3xl xl:text-5xl font-light">
       <span v-html="$t('home.portfolio.title')"></span>
-      <span class="text-primary">
+      <span class="text-verde">
         {{ $t('home.portfolio.titleBold') }}
       </span>
     </h3>
@@ -25,7 +25,7 @@
               class="dark:bg-gray-900 bg-gray-50 py-1.5 transition-colors px-3 rounded-xl border group-hover:dark:text-gray-100 border-gray-900">wordpress</span>
           </span>
         </a>
-        <p class="mt-4 text-xl font-semibold group-hover:text-primary transition-colors">
+        <p class="mt-4 text-xl font-semibold group-hover:text-verde transition-colors">
           website + menu
         </p>
       </div>
@@ -39,7 +39,7 @@
               class="dark:bg-gray-900 bg-gray-50 py-1.5 transition-colors px-3 rounded-xl border group-hover:dark:text-gray-100 border-gray-900">wordpress</span>
           </span>
         </a>
-        <p class="mt-4 text-xl font-semibold group-hover:text-primary transition-colors">
+        <p class="mt-4 text-xl font-semibold group-hover:text-verde transition-colors">
           website + menu
         </p>
       </div>
@@ -56,7 +56,7 @@
               class="dark:bg-gray-900 bg-gray-50 py-1.5 transition-colors px-3 rounded-xl border group-hover:dark:text-gray-100 border-gray-900">Strapi</span>
           </span>
         </a>
-        <p class="mt-4 text-xl font-semibold group-hover:text-primary transition-colors">
+        <p class="mt-4 text-xl font-semibold group-hover:text-verde transition-colors">
           Landing page + Blog
         </p>
       </div>
@@ -73,7 +73,7 @@
               js</span>
           </span>
         </a>
-        <p class="mt-4 text-xl font-semibold group-hover:text-primary transition-colors">
+        <p class="mt-4 text-xl font-semibold group-hover:text-verde transition-colors">
           Web app + Dasboard
         </p>
       </div>
@@ -91,7 +91,7 @@
           </span>
         </a>
 
-        <p class="mt-4 text-xl font-semibold group-hover:text-primary transition-colors">
+        <p class="mt-4 text-xl font-semibold group-hover:text-verde transition-colors">
           Dashboard Shopify connector web app
         </p>
       </div>

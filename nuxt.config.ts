@@ -61,7 +61,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
     //https://icones.js.org/
     'nuxt-icon',
@@ -71,8 +70,8 @@ export default defineNuxtConfig({
     //https://github.com/harlan-zw/nuxt-simple-sitemap
     // 'nuxt-simple-sitemap',
     '@nuxt/content',
-    '@nuxtjs/color-mode',
-    'nuxt-gtag'
+    'nuxt-gtag',
+    '@nuxthq/ui'
   ],
 
   gtag: {
@@ -90,7 +89,7 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root',
       alwaysRedirect: false,
-      fallbackLocale: '',
+      fallbackLocale: 'it',
       cookieCrossOrigin: false,
       cookieDomain: null,
       cookieSecure: false,
@@ -112,7 +111,7 @@ export default defineNuxtConfig({
       },
     ],
     langDir: 'lang/',
-    defaultLocale: 'en',
+    defaultLocale: 'it',
     lazy: true,
     strategy: 'prefix_and_default'
     // vueI18n: './config/vueI18n.ts',
@@ -124,6 +123,7 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
+    preference: 'light'
   },
 
   nitro: {

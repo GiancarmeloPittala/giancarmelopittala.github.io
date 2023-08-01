@@ -2,7 +2,7 @@
   <div class="flex flex-wrap">
     <div class="w-full px-4">
       <div class="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-        <span v-if="intestazione.name" data-aos="fade-right" class="mb-2 block text-lg font-semibold text-primary dark:text-secondary ">
+        <span v-if="intestazione.name" data-aos="fade-right" class="mb-2 block text-lg font-semibold text-verde dark:text-secondary ">
           {{ intestazione.name }}
         </span>
         <h2 v-if="intestazione.title" data-aos="fade-right" data-aos-delay="100" class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
