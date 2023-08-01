@@ -15,7 +15,7 @@
       <div class="flex flex-col gap-2 ">
         <label for="coefficiente">Coefficiente di redditività</label>
         <select v-model="dati.coefficiente"
-          class="text-gray-900 border rounded-lg border-gray-900 dark:border-gray-50 px-4 py-2"
+          class="border rounded-lg border-gray-900 dark:border-gray-50 px-4 py-2"
           label="coefficienti di redditività" name="coefficiente" id="coefficiente">
           <option value="40">40</option>
           <option value="86">86</option>
@@ -26,7 +26,7 @@
       <div class="flex flex-col gap-2">
         <label for="coefficiente">Tassazione percentuale</label>
         <select v-model="dati.tassazione"
-          class="text-gray-900 border rounded-lg border-gray-900 dark:border-gray-50 px-4 py-2"
+          class=" border rounded-lg border-gray-900 dark:border-gray-50 px-4 py-2"
           label="coefficienti di redditività" name="coefficiente" id="tassazione">
           <option value="5">5</option>
           <option value="15">15</option>
@@ -46,13 +46,13 @@
       </div>
       <div class="xl:col-span-4">
         <p>
-         Contributi Inps ammontano al 26.23% dell'imponibile <b>{{ imponibile }}€</b> per un totale di <b> {{ Number(imponibile) * 26.23 / 100 }}€</b>
+         Contributi Inps ammontano al 26.23% dell'imponibile <b>{{ imponibile }}€</b> per un totale di <b> {{ ~~totaleInps }}€</b>
         </p>
         
       </div>
 
       <div class="xl:col-span-4">
-        Su <b>{{ dati.totaleFattura }}€</b> togliendo <b>{{ ~~imposteTotale }}€</b> di imposte e <b>{{ imponibile * 26.23 / 100 }}€</b> di inps rimangono <b> {{ Number(dati.totaleFattura) - Number(imposteTotale) - (imponibile * 26.23 / 100) }}€ </b> <br/>
+        Su <b>{{ dati.totaleFattura }}€</b> togliendo <b>{{ ~~imposteTotale }}€</b> di imposte e <b>{{ ~~totaleInps }}€</b> di inps rimangono <b> {{ Number(dati.totaleFattura) - tasseTotale }}€ </b> <br/>
         Quindi un totale di <b>{{tasseTotale}}€</b> di tasse
       </div>
 
@@ -65,7 +65,7 @@
 <script setup lang="ts">
 
 const dati = reactive({
-  totaleFattura: '30000',
+  totaleFattura: '10',
   totaleVoluto: '',
   coefficiente: 78,
   tassazione: 5,
@@ -94,5 +94,10 @@ const imposteTotale = computed(() => {
   const tot = Number(imponibile.value) - tasse.value - dati.contributi;
 
   return tot > 0 ? Number(tot.toFixed(2)) : 0 
+})
+
+const totaleInps = computed(() => {
+  const tot =  Number(imponibile.value) * 26.23 / 100 ;
+  return Number( tot )
 })
 </script>

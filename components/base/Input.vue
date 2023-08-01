@@ -34,7 +34,7 @@ const error = reactive({
 })
 const baseAttributes = reactive({
   id,
-  class: "text-gray-900 border rounded-lg border-gray-900 dark:border-gray-50 px-4 py-2",
+  class: "text-gray-900 dark:text-gray-50 border rounded-lg border-gray-900 dark:border-gray-50 px-4 py-2",
   placeholder: 'Ma come se fah'
 })
 
