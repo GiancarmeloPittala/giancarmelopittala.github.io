@@ -1,10 +1,10 @@
 ---
-title: How to become a terrible programmer
-description: Have you ever thought, hey I'm too good at programming! Well here's how you can become a worse programmer at an enviable speed.
+title: Come diventare un pessimo programmatore
+description:  Ti sarà capitato di pensare, ehy ma sono troppo sul pezzo!, bhe qui potrai peggiorare con una velocità invidiabile.
 img: https://media.giphy.com/media/eaECZB7V6GACc/source.gif
-alt: Terrible programmer
+alt: pessimo programmatore
 author: Giancarmelo
-keywords: how to become a terrible programmer, how to become a bad programmer
+keywords: come diventare un pessimo programmatore, come diventare un cattivo programmatore
 cAt: 2021-01-10T07:12:00.000Z
 uAt: 2021-01-10T07:12:00.000Z
 categories: 
@@ -13,30 +13,36 @@ categories:
 
 
 
-> We all aspire to become top-notch programmers, the kind of programmers we hear about on TV or social media. Here are just a few of the most famous ones: <br>
+> Un po tutti ambiscono a diventare dei programmatori con i fiocchi, uno di quei programmotori di cui si
+> sente parlare in televisione o nei social, ne cito giusto i più conosciuti: <br>
 
 - ### Salvatore Sanfilippo 
-  Known in the industry as "antirez," developer of REDIS, a cache database
+  Conosciuto nell'ambiente come "antirez", sviluppatore di REDIS, in cache database
 - ### William Henry Gates III 
   <small>Bill Gates</small>
-  Founder of Microsoft Corporation, a big shot in the industry
+  fondatore di microsoft corporation, un bel pezzo grosso
 - ### Richard Stallman
-  We remember him as one of the creators of the Linux kernel, which is widely used by programmers like us.
+  Lo ricordiamo come uno dei creatori del kernel Linux, tanto usato da noi programmatori
 
-But we **don't** want to become one of the most famous ones, so here are **5** practical tips for writing terrible code:
+Ma a noi **non** interessa diventare uno tra i più famosi quindi ecco **5** pratici consigli per scrivere del pessimo codice:
 
-> ## (1) => Declare variables however you want
-> Don't give any importance to naming conventions or consistency between the name and its content. For example: 
+> ## (1) => Dichiara le variabili come capita 
+>
+>  Non dare alcuna importanza alla nomenclatura ne alla coerenza del nome con il suo contenuto
+>  es: 
 
 
 ``` js
 const hgjfdu = "pippo";
 ```
 
-Well done! Now your variables will be incomprehensible both to you and to future programmers who will have the unpleasant task of fixing all the bugs you have created.
+Ben fatto!, ora le tue variabili risulteranno incomprensibili sia a te che ai futuri programmatori che avranno lo spiacevole onore di dover fixare tutti i bug che avrai creato.
 
-> ## (2) => Iterate through an array for no reason and print the result
->  Printing values during code **debugging** is a common practice to try to understand where the error lies. But since we want to do the worst possible job, we will print values randomly without any real reason.
+> ## (2) => Itera array senza alcuna ragione e manda a video il risultato
+>
+>  Pratica comune durante il <strong>debug</strong> di codice, stampare i valori per cercare di capire dove
+> si insidi l'errore. Ma noi essendo che dobbiamo dare il peggio, stamperemo valori a caso senza che ci sia
+> un reale motivo
 
 
 ``` js
@@ -45,17 +51,21 @@ if(true)
   dasdas.forEach( ddfdfd => console.error(ddfdfd) )
 ```
 
-Well done! Having applied the first tip, it will be absolutely impossible to understand the reason for the error at first glance.
+Ben fatto!, Avendo applicato il primo consiglio risulterà assolutamente impossibile capire a primo impatto la motivazione dell'errore.
 
 
-> ## (3) => Copy and paste code instead of creating classes or functions
-> One of the things you need to do if you want to become a terrible programmer is definitely to repeat code, which is not very maintainable and significantly complicates code refactoring.
+> ## (3) => Copia e incolla codice, invece di creare classi o funzioni
+> 
+>  Una delle cose che bisogna fare se si vuole diventare un **pessimo** programmatore, è 
+>  sicuramente ripetere codice, che risulta essere poco mantenibile e complica notevolmente il refactoring
+>  del codice.
+> 
 
 
 ``` js
-// Let's say we have to print 
-// the Fibonacci sequence up 
-// to a given index
+// ipotizziamo di dover stampare 
+// la sequenza di fibonacci fino 
+// a un indice dato
 
 let fib = []; 
 
@@ -79,33 +89,39 @@ for (let i = 2; i <=6; i++) {
 }
 ``` 
 
-Great, instead of structuring a function that passes the sequence number as a simple parameter, we preferred to copy everything and change the limit of the for loop. <i class="fas fa-thumbs-up"></i>
+Grandioso, invece di strutturare una funzione che passi come semplice parametro il numero della sequenza come limite, abbiamo preferito ricopiare il tutto cambiando il limite del for <i class="fas fa-thumbs-up"></i>
 
-> ## (4) => Ignore possible code simplifications
-> It often happens that the code can be simplified, but out of pure laziness or lack of knowledge, we prefer not to do it. This leads to very long code, which will result in unclear code in the future.
+> ## (4) => Ignora possibili semplificazioni del codice 
+>
+> Capita spesso di poter semplificare il codice, ma per pura pigrizia o per mancata conoscenza si 
+> preferisce  non farlo, il tutto porta a codice molto lungo, che porterà in futuro ad un codice poco chiaro 
 
 ``` js
-// Let's assume that a function returns
-// Prefer a code like this
+//ipotizziamo il return di una funzione
+//Preferire un codice del genere 
 <br>
 if (a < 0 && b > 0 && c == 0) {
    return true;
 } else {
    return false;<br>
 
-// Version for people who don't want
-// to be a "terrible programmer"
+// versione da gente che non
+//vuole passare per "pessimo programmatore"
 
 return a < 0 && b > 0 && c == 0;
 ``` 
 
-> ## (5) => Get a degree in physics and then teach computer science in high schools 
-> If you want to be a terrible programmer, I recommend getting a very difficult degree in **physics** and then teaching computer science. This will lead you to write terrible code and understand even less.
+> ## (5) => Prendere una laurea in fisica per poi insegnare informatica nelle scuole di secondo grado 
+> 
+>  Se volete essere dei programmatori pessimi vi consiglio di prendere una faticosissima laurea in 
+>  **fisica** per poi insegnare *informatica*, questo vi porterà a scrivere del codice pessimo e 
+>  capirne ancora meno
 
 ![crazyimg](https://media.giphy.com/media/13GRR4ttt8hBXa/giphy.gif "gif")
 
-> By following these simple yet effective tips, you can define yourself as **terrible programmer**
-> <small>PS. Don't study physics if you want to teach computer science, please. </small>
+> Seguiti questi semplici ma efficaci consigli vi potrete definire dei veri **PESSIMI PROGRAMMATORI</>**
+> <br>
+> <small>PS. Non studiate fisica se volete insegnare informatica pls </small>
 
 </div>
 

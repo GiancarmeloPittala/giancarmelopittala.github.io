@@ -51,11 +51,11 @@
       </small>
     </div>
 
-    <NuxtLink :to="{ path: '/', hash: '#contact' }">
+    <BaseLink :link="{ to: {path: '/', hash: '#contact'} }">
       <BaseButton class="rounded-full w-full">
         {{ $t('home.card.contact') }}
       </BaseButton>
-    </NuxtLink>
+    </BaseLink>
 
   </div>
 </template>

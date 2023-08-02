@@ -38,7 +38,7 @@ const { locale } = useI18n()
 
 async function getLastArticle() {
   
-  return await queryContent(`${locale.value === 'en' ? '' : `/${locale.value}` }/blog`, 'articles')
+  return await queryContent(`${locale.value === 'it' ? '' : `/${locale.value}` }/blog`, 'articles')
     .only(['_path', 'title', 'description', 'img', 'categories', 'alt'])
     .sort({ cAt: -1 })
     .limit(5)

@@ -33,8 +33,8 @@
 
 
 <script setup lang="ts">
-const route = useRoute();
 const { public: config } = useRuntimeConfig()
+const route = useRoute();
 const doc = await queryContent(route.fullPath).findOne();
 
 definePageMeta({
@@ -84,7 +84,7 @@ useHead({ meta,title: doc.title ?? 'default' });
 }
 
 .blog-section blockquote {
-  @apply p-4 bg-[#090302] rounded-xl text-gray-300
+  @apply p-4 dark:bg-[#090302] text-gray-900 bg-gray-50 rounded-xl dark:text-gray-300
 }
 
 .blog-section h2,

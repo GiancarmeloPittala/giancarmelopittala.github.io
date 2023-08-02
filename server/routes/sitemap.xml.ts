@@ -13,6 +13,7 @@ export default defineEventHandler(async (event) => {
       changefreq: 'monthly'
     })
   }
+
   sitemap.end()
   return streamToPromise(sitemap)
 })

@@ -1,15 +1,19 @@
 <template>
   <div class="privacy-policy">
-    <ContentDoc>
-      <template #not-found>
-        <h1>Document not found</h1>
-      </template>
-    </ContentDoc>
+    <ContentRenderer :value="doc" />
   </div>
 </template>
 
 
-<style lang="postcss">
+<script setup lang="ts">
+const route = useRoute();
+console.log( route.fullPath )
+const doc = await queryContent(route.fullPath).findOne();
+
+</script>
+
+
+<style>
 .privacy-policy h1{
   @apply text-5xl;
 }

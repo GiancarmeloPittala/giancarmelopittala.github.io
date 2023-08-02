@@ -1,37 +1,38 @@
 ---
-title: How to create a custom Shopify template
-description: Discover how to set up your development environment and create a new Shopify template starting from a reference template, Dawn.
+title: Come creare un Template custom per shopify
+description: Scopri come configurare il tuo ambiente di sviluppo e creare un nuovo template shopify partendo da un template di riferimento, Dawn.
 img: /images/articles/shopify.webp
 alt: Shopify create template
 author: Giancarmelo
-keywords: Create a Shopify template, custom Shopify theme, Shopify template, how to create a Shopify template on Shopify.
+keywords: Creare Template shopify, shopify tema custom, shopify Template, shopify come creare un template shopify
 cAt: 2022-05-01T12:45:58.775Z
 uAt: 2023-03-29T16:51:15.619Z
 categories: 
   - shopify
   - template
   - tutorial
+tags: noShow
 ---
 
-## How to create a custom Shopify template
-If you're thinking of creating an online store on Shopify, you need a theme for your website. There are many pre-designed themes available, but if you want to create a custom website, you can create a custom Shopify template. In this article, we'll show you how to create and properly set up a new custom theme for your online store on Shopify.
+## Come creare un template Shopify custom
+Se stai pensando di creare un negozio online su Shopify, hai bisogno di un tema per il tuo sito web. Esistono molti temi predefiniti disponibili, ma se vuoi creare un sito web personalizzato, puoi creare un template Shopify custom. In questo articolo, ti mostreremo come creare e configurare correttamente un nuovo tema personalizzato per il tuo negozio online su Shopify.
 
-### Step 1: Create a new theme
-To create a new custom theme, you need to access the "Themes" section of your Shopify account and select "Create a new theme". Then, you need to choose whether you want to create a theme "From scratch" or use an existing theme as a base for your creation. If you want to start from scratch, select "Build from scratch".
+### Passaggio 1: Crea un nuovo tema
+Per creare un nuovo tema personalizzato, devi accedere alla sezione "Themes" del tuo account Shopify e selezionare "Create a new theme". Successivamente, devi scegliere se vuoi creare un tema "Da zero" o utilizzare un tema esistente come base per la tua creazione. Se vuoi partire da zero, seleziona "Build from scratch".
 
-### Step 2: Add sections to your theme
-After creating your new theme, you need to start adding the sections that make it up. A section is a content unit that you can use to create the layout of your theme. Shopify provides several pre-defined sections, such as Header, Footer, Collection, and Product. You can also create your own custom sections.
+### Passaggio 2: Aggiungi sezioni al tuo tema
+Dopo aver creato il tuo nuovo tema, devi iniziare ad aggiungere le sezioni che lo compongono. Una sezione è un'unità di contenuto che puoi utilizzare per creare il layout del tuo tema. Shopify fornisce diverse sezioni predefinite, come Header, Footer, Collection e Product. Puoi anche creare le tue sezioni personalizzate.
 
-### Step 3: Edit your theme code
-To edit your theme code, you need to select "Actions" and then "Edit Code". Here you will find all the HTML, CSS, and JavaScript code files that make up your theme. You can edit these files to customize your theme.
+### Passaggio 3: Modifica il codice del tuo tema
+Per modificare il codice del tuo tema, devi selezionare "Actions" e successivamente "Edit Code". Qui troverai tutti i file di codice HTML, CSS e JavaScript che compongono il tuo tema. Puoi modificare questi file per personalizzare il tuo tema.
 
-### Step 4: Customize your theme
-To further customize your theme, you can use Shopify's theme editor. Here you can edit the color, font style, background image, and other aspects of your theme. Additionally, you can use Shopify apps to add functionality to your online store.
+### Passaggio 4: Personalizza il tuo tema
+Per personalizzare ulteriormente il tuo tema, puoi utilizzare il tema editor di Shopify. Qui puoi modificare il colore, lo stile del font, l'immagine di sfondo e altri aspetti del tuo tema. Inoltre, puoi utilizzare gli app Shopify per aggiungere funzionalità al tuo negozio online.
 
-### Step 5: Test your theme
-Before publishing your theme, make sure to test it on all devices and browsers. Verify that the website is responsive and that the layout is consistent. Additionally, make sure that all the features of your theme work properly.
+### Passaggio 5: Testa il tuo tema
+Prima di pubblicare il tuo tema, assicurati di testarlo su tutti i dispositivi e browser. Verifica che il sito web sia reattivo e che il layout sia coerente. Inoltre, assicurati che tutte le funzionalità del tuo tema funzionino correttamente.
 
-### Conclusion
-Creating a custom theme on Shopify can take time and effort, but the end result will be a unique and professional online store. Follow these steps to create and properly set up a new custom theme for your online store on Shopify.
+### Conclusione
+Creare un tema personalizzato su Shopify può richiedere tempo e sforzo, ma il risultato finale sarà un negozio online unico e professionale. Segui questi passaggi per creare e configurare correttamente un nuovo tema personalizzato per il tuo negozio online su Shopify.
 
-Remember that Shopify offers many tools and resources to help you create your online store. If you need help, don't hesitate to contact Shopify customer support.
+Ricorda che Shopify offre molti strumenti e risorse per aiutarti a creare il tuo negozio online. Se hai bisogno di aiuto, non esitare a contattare il supporto clienti Shopify.
