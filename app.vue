@@ -1,7 +1,9 @@
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage/>
+      <KeepAlive>
+        <NuxtPage/>
+      </KeepAlive>
     </NuxtLayout>
 
     <UNotifications  />

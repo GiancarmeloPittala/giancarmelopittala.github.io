@@ -61,6 +61,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@pinia/nuxt',
+    //https://v8.i18n.nuxtjs.org/getting-started/basic-usage
     '@nuxtjs/i18n',
     //https://icones.js.org/
     'nuxt-icon',
