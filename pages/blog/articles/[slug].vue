@@ -4,42 +4,49 @@
     <SchemaOrgWebPage />
 
     <div class="blog-section">
-
       <ContentRenderer :value="doc">
         <div class="flex gap-8 flex-col lg:flex-row">
-          <BaseImage :image="{ src: doc?.img, alt: doc?.alt }" class="max-w-[600px] max-h-[400px]" />
+          <picture >
+            <img loading="lazy" :src="doc.img" :alt="doc.alt" :title="doc.alt" class=" max-h-[400px] object-cover" />
+          </picture>
           <div class="flex flex-col gap-4">
             <div class="flex justify-between gap-4">
               <span title="Creato" class="flex gap-4 items-center">
-                <Icon class="" name="material-symbols:alarm-add-outline-rounded" />
+                <Icon
+                  class=""
+                  name="material-symbols:alarm-add-outline-rounded"
+                />
                 {{ new Date(doc?.cAt).toLocaleString() }}
               </span>
-              <span title="Ultimo aggiornamento" class="flex gap-4 items-center">
-                <Icon class="" name="material-symbols:alarm-smart-wake-outline-rounded" />
+              <span
+                title="Ultimo aggiornamento"
+                class="flex gap-4 items-center"
+              >
+                <Icon
+                  class=""
+                  name="material-symbols:alarm-smart-wake-outline-rounded"
+                />
                 {{ new Date(doc?.uAt).toLocaleString() }}
               </span>
             </div>
-            <h1 class="text-2xl xl:text-4xl ">{{ doc?.title }}</h1>
+            <h1 class="text-2xl xl:text-4xl">{{ doc?.title }}</h1>
             <p>{{ doc?.description }}</p>
           </div>
         </div>
         <ContentRendererMarkdown :value="doc" />
       </ContentRenderer>
     </div>
-
-
   </div>
 </template>
 
-
 <script setup lang="ts">
 const { public: config } = useRuntimeConfig()
-const route = useRoute();
-const doc = await queryContent(route.fullPath).findOne();
+const route = useRoute()
+const doc = await queryContent(route.fullPath).findOne()
 
 definePageMeta({
   layout: 'article'
-});
+})
 
 const meta = computed(() => [
   ...useSiteMeta({
@@ -47,27 +54,27 @@ const meta = computed(() => [
     description: doc?.description,
     url: `${config.siteUrl}${route.params.slug}`,
     keywords: doc?.keywords || doc?.title?.trim(),
-    mainImage: doc?.img,
+    mainImage: doc?.img
   }),
   {
-    property: "article:published_time",
-    content: doc.cAt,
+    property: 'article:published_time',
+    content: doc.cAt
   },
   {
-    property: "article:modified_time",
-    content: doc.uAt,
+    property: 'article:modified_time',
+    content: doc.uAt
   },
   {
-    property: "article:tag",
-    content: doc.tags ? doc.tags.toString() : "",
+    property: 'article:tag',
+    content: doc.tags ? doc.tags.toString() : ''
   },
   {
-    property: "canonical",
-    content: `${config.siteUrl}${route.fullPath}`,
+    property: 'canonical',
+    content: `${config.siteUrl}${route.fullPath}`
   }
 ])
 
-useHead({ meta,title: doc.title ?? 'default' });
+useHead({ meta, title: doc.title ?? 'default' })
 </script>
 
 <style lang="postcss">
@@ -84,7 +91,7 @@ useHead({ meta,title: doc.title ?? 'default' });
 }
 
 .blog-section blockquote {
-  @apply p-4 dark:bg-[#090302] text-gray-900 bg-gray-50 rounded-xl dark:text-gray-300
+  @apply p-4 dark:bg-[#090302] text-gray-900 bg-gray-50 rounded-xl dark:text-gray-300;
 }
 
 .blog-section h2,
@@ -102,7 +109,7 @@ useHead({ meta,title: doc.title ?? 'default' });
   @apply dark:text-gray-300;
 }
 
-.blog-section>*>* {
+.blog-section > * > * {
   @apply my-6;
 }
 

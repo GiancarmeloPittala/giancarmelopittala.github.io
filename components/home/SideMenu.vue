@@ -1,11 +1,11 @@
 <template>
-  <header class="fixed top-16 xl:top-20 right-16 transition-all">
+  <header class="fixed top-8 xl:top-20 right-8 xl:right-16 transition-all">
     <div class="grid gap-32">
       <div>
         <div @click="_open = !_open">
           <LayoutHeaderOpenButton v-model="_open" />
         </div>
-        <span class="flex items-center justify-center mt-4 dark:text-gray-400 w-12 h-12 relative focus:outline-none border border-gray-400 rounded-full">
+        <span class="flex items-center justify-center mt-4 dark:text-gray-400 w-8 h-8 xl:w-12 xl:h-12 relative focus:outline-none border border-gray-400 rounded-full dark:bg-black bg-white">
           <LayoutHeaderDarkModeButton />
         </span>
       </div>

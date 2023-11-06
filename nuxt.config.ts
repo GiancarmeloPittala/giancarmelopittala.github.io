@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         { name: "designer", content: "giancarmelo, giancarmelo@gmail.com" },
         { name: "copyright", content: "Giancarmelopittala.com" },
         { name: "url", content: `${DEFAULT_NUXT_PUBLIC_SITE_URL}/` },
-        { name: "category", content: "food" },
+        { name: "category", content: "programming" },
         { name: "coverage", content: "Worldwide" },
         { name: "distribution", content: "Global" },
 
@@ -93,7 +93,7 @@ export default defineNuxtConfig({
       fallbackLocale: 'it',
       cookieCrossOrigin: false,
       cookieDomain: null,
-      cookieSecure: false,
+      cookieSecure: false
     },
     locales: [
       {
@@ -115,11 +115,10 @@ export default defineNuxtConfig({
     defaultLocale: 'it',
     lazy: true,
     strategy: 'prefix_except_default'
-    // vueI18n: './config/vueI18n.ts',
   },
 
   schemaOrg: {
-    host: DEFAULT_NUXT_PUBLIC_SITE_URL,
+    host: "https://asdasd.com",
   },
 
   colorMode: {
