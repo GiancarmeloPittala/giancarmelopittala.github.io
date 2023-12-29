@@ -7,13 +7,11 @@
 
 <script setup lang="ts">
 const route = useRoute();
-console.log( route.fullPath )
 const doc = await queryContent(route.fullPath).findOne();
-
 </script>
 
 
-<style>
+<style lang="">
 .privacy-policy h1{
   @apply text-5xl;
 }
