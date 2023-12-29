@@ -6,7 +6,7 @@
     <SchemaOrgPerson name="Giancarmelo Pittalà" image="/images/icon/android-chrome-192x192.png"
       :same-as="['https://github.com/GiancarmeloPittala']" />
 
-    <div class="grid gap-[100px] max-w-5xl">
+    <div class="flex flex-col gap-[100px] max-w-screen-lg mx-auto">
       <HomeIntroduce />
       <HomeAbout />
       <HomeService />

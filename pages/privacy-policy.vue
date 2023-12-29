@@ -11,7 +11,7 @@ const doc = await queryContent(route.fullPath).findOne();
 </script>
 
 
-<style lang="">
+<style>
 .privacy-policy h1{
   @apply text-5xl;
 }

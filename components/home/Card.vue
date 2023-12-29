@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sticky top-16 max-w-[600px] mx-auto xl:w-[400px] p-12 py-16 flex flex-col border border-gray-400 rounded-3xl gap-10">
+    class="max-w-[600px] mx-auto xl:w-[400px] p-12 py-16 flex flex-col border border-gray-200 rounded-3xl gap-10">
     <div class="flex justify-between">
       <div>
         <h1 class="text-xl font-semibold">Pittalà Giancarmelo</h1>
@@ -10,7 +10,7 @@
     </div>
 
 
-    <img loading="lazy" class="w-full rounded-full border-8 border-black dark:border-gray-50 aspect-square object-[-90px]" src="/images/me.png" alt="personal photo image" />
+    <img loading="lazy" class="w-full rounded-xl border-2 border-gray-200 dark:border-gray-50" src="/images/me.png" alt="personal photo image" />
 
     <div class="flex justify-between flex-col gap-4">
       <span class="flex justify-center items-center gap-4">
