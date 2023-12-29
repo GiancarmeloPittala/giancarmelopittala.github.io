@@ -118,7 +118,7 @@ export default defineNuxtConfig({
   },
 
   schemaOrg: {
-    host: "https://asdasd.com",
+    minify: true
   },
 
   colorMode: {
