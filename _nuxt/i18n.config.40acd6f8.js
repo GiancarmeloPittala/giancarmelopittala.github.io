@@ -1,1 +1,0 @@
-import e from"./it-IT.9db604d4.js";import i from"./en-US.c8f54f45.js";const a=()=>({legacy:!1,messages:{en:i,it:e},strategy:"prefix_except_default",locales:[{code:"en",iso:"en-US",file:"en-US.json",name:"English",icon:"twemoji:flag-for-flag-united-states"},{code:"it",iso:"it-IT",file:"it-IT.json",name:"Italiano",icon:"openmoji:flag-italy"}]});export{a as default};
