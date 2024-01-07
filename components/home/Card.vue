@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-[600px] mx-auto xl:w-[400px] p-12 py-16 flex flex-col border border-gray-200 rounded-3xl gap-10">
+    class="max-w-[600px] mx-auto xl:w-[400px] xl:p-12 xl:py-16 flex flex-col xl:border border-gray-200 rounded-3xl gap-10">
     <div class="flex justify-between">
       <div>
         <h1 class="text-xl font-semibold">Pittalà Giancarmelo</h1>
